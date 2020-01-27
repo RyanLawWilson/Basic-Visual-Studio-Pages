@@ -1,0 +1,39 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4 my-5">Basic Website in Visual Studio</h1>
+</div>
+
+<!-- Embedded Video -->
+<div class="container m-2" id="video">
+    <div class="row text-center p-2 justify-content-center">
+        <div class="col-6">
+            <h3>Check out this embedded video!</h3>
+            <div class="embed-responsive embed-responsive-16by9 m-1">
+                <!-- The original link was https://www.youtube.com/watch?v=d1YBv2mWll0 
+                     To embed it, replace ?v=  with / and replace watch with embed -->
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d1YBv2mWll0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Some random animation! -->
+<div class="container m-2" id="animation">
+    <div class="row text-center p-2 justify-content-center">
+        <div class="col-8">
+            <div class="row align-items-center m-1">
+                <div class="col text-left"><h3>Watch the squares shrivel and dissapear</h3></div>
+                <div class="col"><button type="button" class="btn btn-danger btn-lg btn-block" onclick="myAnimate()">Click Me!</button></div>
+            </div>
+            <div id="animationArea">
+                <div id="animatedBox1"></div>
+                <div id="animatedBox2"></div>
+            </div>
+        </div>
+    </div>
+</div>
